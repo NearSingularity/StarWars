@@ -45,6 +45,7 @@ body {
     display: flex;
     justify-content: center;
     position: absolute;
+    flex-direction: column;
     left: 0;
     top: calc(50% - 50px);
     margin: 0;
@@ -85,3 +86,8 @@ body {
     background-color: transparent;
 }
 
+@media (min-width: 768px) {
+    #countdown {
+        flex-direction: row;
+    }
+}

@@ -42,7 +42,6 @@ $(() => {
             this.filter.uniforms.mouse.value.y = 0.5;
             this.filter.update();
         },
-        
         createShader() {
             const fragmentSrc = [
                 "precision mediump float;",
@@ -98,5 +97,11 @@ $(() => {
 
     const game = new Phaser.Game(window.innerWidth, window.innerHeight, Phaser.AUTO, 'space', true);
     game.state.add('play', play, true);
+    
+    
+    $(window).resize(() => {
+        game.width = window.innerWidth;
+        game.height = window.innerHeight;
+    })
 
 });
