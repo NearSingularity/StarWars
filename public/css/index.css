@@ -44,6 +44,7 @@ body {
 #countdown {
     display: flex;
     justify-content: center;
+    align-items: center;
     position: absolute;
     flex-direction: column;
     left: 0;
@@ -63,16 +64,17 @@ body {
     letter-spacing: 2px;
 }
 
-
+.flip-clock-dot {
+    left: 0 !important;
+}
 
 .flip,
 .play {
-    padding: 0 50px !important;
+    padding: 0 10px !important;
 }
 
 .flip-clock-label {
-    width: 100px;
-    right: -160px !important;
+    left: 0;
     color: #CCC !important;
     text-align: center;
     font-family: Death Star;
@@ -89,5 +91,15 @@ body {
 @media (min-width: 768px) {
     #countdown {
         flex-direction: row;
+    }
+    
+    .flip-clock-label {
+        width: 100px;
+        left: 160px !important;
+    }
+    
+    .flip,
+    .play {
+        padding: 0 50px !important;
     }
 }
