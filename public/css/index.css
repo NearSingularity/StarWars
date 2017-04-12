@@ -46,7 +46,6 @@ body {
     justify-content: center;
     align-items: center;
     position: absolute;
-    flex-direction: column;
     left: 0;
     top: calc(50% - 50px);
     margin: 0;
@@ -82,6 +81,8 @@ body {
 
 .inn {
     font-family: Rebellion !important;
+    
+    font-size: 5vmin !important;
 }
 
 .flip-clock-wrapper ul li a div.up:after {
